@@ -1,39 +1,53 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App Help Desk</title>
 
-<head>
-    <meta charset="utf-8">
-    <title>Primeiro Passos em PHP</title>
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<body>
+    <style>
+      .navbar {
+        padding: 10px 0 10px 0;
+        box-shadow: 0px 10px 2px 0px #D65600;
+      }
+      .card-login {
+        padding: 50px 0 0 0;
+        width: 450px;
+        margin: 80 auto;
+      }
+    </style>
+  </head>
 
-    <?php
-    /*
-        Utilizando comentarios em bloco
-        Nao tenho muito o que dizer sobre esta primeira pagina teste
-        Vou utilizar este arquivo para treinar pull e push no github desktop
-    */
+  <body>
 
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" style="color: #D65600; font-size: 25px" href="#">
+        <img src="logo.png" width="40" height="40"  class="d-inline-block align-top" alt="">
+        App Help Desk
+      </a>
+    </nav>
 
-    echo "<h1>Ola Mundo!</h1>";//Iniciando o codigo com Hello World
-    $numero1 = 10;
-    $numero2 = 4;
+    <div class="container">    
+      <div class="row">
 
-    $soma = $numero1 + $numero2;//soma as variaveis
-    $subtracao = $numero1 - $numero2;//subtrai
-    $multiplicacao = $numero1 * $numero2;//multiplica
-    $divisao = $numero1 / $numero2;//divide
-
-    echo $soma . "<br>";
-    echo $subtracao . "<br>";
-    echo $multiplicacao . "<br>";
-    echo $divisao."<br>";//devolve o resultado que esta salvo nas variaveis em questao
-
-    echo 'Comando echo'."<br>";
-    print 'Comando print';
-
-    ?>
-
-</body>
-
+        <div class="card-login">
+          <div class="card">
+            <div class="card-header">
+              <h2 style="color: #D65600">Login</h2>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Senha">
+                </div>
+                <button class="btn btn-lg btn-info btn-block" type="submit" style="color: #D65600; font-size: 25px;">Entrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
 </html>
