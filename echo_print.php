@@ -1,6 +1,10 @@
 <?php
 
-    echo 'Escrevendo utilizando echo<br>';
-    echo  print ('Escrevendo atraves de um print<br>');
+    if ((!(5 == 5) && 2 == 2) || ((2 + 2) == 4) && 'j' != 'j') {
+        echo 'verdadeiro';
+    }else {
+        echo 'falso';
+    }
+
 
 ?>
